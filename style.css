@@ -7,6 +7,11 @@
 }
 
 :root{
+    --primary: linear-gradient(to right, #121212, rgb(84, 4, 67));;
+    --secondary: #643A6B;
+    --extra1: #957777;
+    --extra2:#B0A4A4;
+    --extra3: blueviolet;
     --font-poppins:'Poppins', sans-serif;
 
 }
@@ -17,7 +22,10 @@ body{
 
 
 header{
-    background-image: linear-gradient(to right, #121212, rgb(84, 4, 67));
+    /* background-image: linear-gradient(to right, #121212, rgb(84, 4, 67)); */
+    /* background-image: var(--primary); */
+
+    background-color: var(--secondary);
 }
 
 .navheader {
@@ -50,7 +58,8 @@ nav {
     border-radius: 50%;
     width: 30px;
     height: 30px;
-
+    margin-left: 1rem;
+    
 }
 
 
@@ -80,28 +89,37 @@ header ul li {
 }
 
 header li:hover {
-    background-color: blueviolet;
+    background-color: var(--extra3);
     transition: 0.4s;
+    
 } 
 
-.footer{
+footer{
+    width: 100%;
+    background-color: white;
     position: absolute;
     bottom: 0;
     left: 0;
-    border: 1px solid red;
+}
+.footer{
+   
+
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    background-color: violet;
+    justify-content: center;
+    /* border: 1px solid black; */
+
+    
+   
     
 }
 .subfoot{
     display: flex;
-    /* place-items: center; */
-    /* justify-content: right; */
+    /* border: 1px solid black; */
     height: 100%;
-    width: 100%;  
+    width: 50%;  
+    justify-content: center;
 }
 
 footer ul{
@@ -118,5 +136,43 @@ footer ul li{
 footer ul li a{
     color:black;
     text-decoration: none;
+    font-size: 1.1rem;
  
 }
+
+section{
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    height: 92.3vh;
+    background-color: black;
+    
+}
+
+.mid{
+    max-width: 1440px;
+   
+    
+    background-image: url("/images/background.jpg");
+    
+    
+}
+   
+.back{
+
+    display: flex;
+    place-content:center;
+    border: 1px solid black;
+    height: 100%;
+}
+/* .button{
+    position: relative;
+    background-color:red;
+    padding: 10px;
+    border: transparent;
+    border-radius: 5px;
+    align-content: baseline;
+    z-index: 1;    
+
+} */
+
