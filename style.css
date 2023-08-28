@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-poppins:'Poppins', sans-serif;
+
+}
+body{
+    font-family:var(--font-poppins) ;
+}
+
+
+header{
+    background-image: linear-gradient(to right, #121212, rgb(84, 4, 67));
+}
+
+.navheader {
+
+    max-width: 1440px;
+
+    margin: 0 auto;
+
+    
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+nav {
+    display: flex;
+    place-items: center;
+    justify-content: right;
+    height: 100%;
+    width: 50%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+ 
+}
+.logo a{
+    display: flex;
+    align-items: center; 
+}
+.logo img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+}
+
+
+
+header ul {
+
+    position: relative;
+
+    display: flex;
+    row-gap: 1rem;
+    list-style: none;
+    user-select: none;
+    font-size: 1.2rem;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+header ul li {
+    border: 1px solid transparent;
+    padding: 10px;
+    cursor: pointer;
+ 
+}
+
+header li:hover {
+    background-color: blueviolet;
+    transition: 0.4s;
+}
+
+
+
+
+footer ul{
+    list-style: none;
+    
+}
+
+footer ul li a{
+    color: black;
+    text-decoration: none;
+}
