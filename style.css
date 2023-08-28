@@ -12,6 +12,7 @@
 }
 body{
     font-family:var(--font-poppins) ;
+    
 }
 
 
@@ -22,11 +23,7 @@ header{
 .navheader {
 
     max-width: 1440px;
-
     margin: 0 auto;
-
-    
-
     display: flex;
     justify-content: space-between;
     
@@ -85,17 +82,4 @@ header ul li {
 header li:hover {
     background-color: blueviolet;
     transition: 0.4s;
-}
-
-
-
-
-footer ul{
-    list-style: none;
-    
-}
-
-footer ul li a{
-    color: black;
-    text-decoration: none;
 }
