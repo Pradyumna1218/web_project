@@ -22,16 +22,16 @@ body{
     
 }
 
-
+/* header css */
 header{
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     background-color: transparent;
 }
 
 .navheader {
-
+    
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -50,17 +50,25 @@ nav {
 .logo{
     display: flex;
     align-items: center;
+    justify-content: center;
+    place-content: center;
+    place-items: center;
  
 }
 .logo a{
     display: flex;
-    align-items: center; 
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+    place-items: center;
 }
 .logo img {
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
+    margin: 0px 10px 0px 10px;
+    
     
 }
 
@@ -95,57 +103,8 @@ header li:hover {
     transition: 0.4s;
     
 } 
+/* header css end */
 
-footer{
-    width: 100%;
-    background-color: transparent;
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* left: 0; */
-}
-.footer{
-   
-
-    max-width: 1440px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    /* border: 1px solid black; */
-
-    
-   
-    
-}
-.subfoot{
-    display: flex;
-    /* border: 1px solid black; */
-    height: 100%;
-    width: 50%;  
-    justify-content: center;
-}
-
-footer ul{
-    list-style: none;
-    display: flex;
-    row-gap: 1rem;
-    
-}
-
-footer ul li{
-    padding: 10px;
-
-}
-footer ul li a{
-    color:black;
-    text-decoration: none;
-    font-size: 1.1rem;
- 
-}
-.icons li a{
-    background-color: white;
-    padding: 5px;
-    border-radius: 10px;
-}
 
 .mid{
     max-width: 1440px;  
@@ -157,7 +116,7 @@ footer ul li a{
     justify-items: center;
     margin: 0 auto;
     overflow-x: hidden;
-    top: 0;
+    /* top: 0; */
     
 }
 .mid-image{
@@ -236,7 +195,92 @@ footer ul li a{
 }
 
 .whole{
+    max-width: 1440px;
+    position: relative;
     width: 100%;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    place-content:center;    
+    align-items: center;
+    justify-items: center;
+    /* flex-direction: column; */
+}
+.recipe-container{
+    position: relative;
+    display: flex;
+    width: 90%;
+    border: 1px solid black;
+    place-content:center;    
+    align-items: center;
+    justify-content: space-evenly;
+    
     height: 400px;
-    background-color: pink;
+
+
+}
+.recipe-box{
+    position: relative;
+    height: 300px;
+    border: 1px solid black;
+    width: 250px;
+}
+
+
+
+/* footer css */
+
+
+footer{
+    
+    width: 100%;
+    background-color: transparent;
+    bottom: 0; 
+    left: 0; 
+}
+.footer{
+   
+
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    /* justify-content: space-between; */
+    
+   
+    
+}
+.subfoot{
+    justify-content:center;
+    display: flex;
+    /* border: 1px solid black; */
+    height: 100%;
+    width: 100%;  
+   
+    
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    row-gap: 1rem;
+    
+}
+
+footer ul li{
+    padding: 10px;
+
+}
+footer ul li a{
+    color:black;
+    text-decoration: none;
+    font-size: 1.1rem;
+ 
+}
+.icons li a{
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
 }
