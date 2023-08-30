@@ -234,3 +234,9 @@ footer ul li a{
     text-align: center;
     max-width: 900px;
 }
+
+.whole{
+    width: 100%;
+    height: 400px;
+    background-color: pink;
+}
